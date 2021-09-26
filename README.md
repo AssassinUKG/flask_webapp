@@ -40,11 +40,35 @@ make a file in /var/www/html/index.php
 ```
 sudo apt-get install phpmyadmin
 
-# Fix instlal
+# Fix install
 sudo nano /etc/apache2/apache2.conf
 # Add the line to the end of the file
 include /etc/phpmyadmin/apache.conf
 # Restart apache and test http://localhost/phpmyadmin
+```
 
+---
+
+# Flask install
+
+## Setup virtual env
 
 ```
+# Using python3
+sudo apt install -y python3-pip
+sudo apt install build-essential libssl-dev libffi-dev python-dev
+sudo apt install -y python3-venv
+
+python3 -m venv flask_blog/
+
+source flask_blog/bin/activate
+
+# Now in virtual Env (env)
+(env)pip install flask
+
+# Check flask version 
+python -c "import flask; print(flask.__version__)"
+```
+
+
+Original Guide: https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
