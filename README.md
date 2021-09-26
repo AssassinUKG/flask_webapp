@@ -1,7 +1,7 @@
 # flask_webapp
 basic_notes_app
 
-## Install Lamp setup (linux mint)
+## Install Lamp (linux mint)
 
 ```
 sudo apt-get update
@@ -24,4 +24,27 @@ exit
 
 sudo mysql -u root -p
 mYSuP3rP8$$
+```
+
+
+## Check PHP install
+
+make a file in /var/www/html/index.php
+
+```
+<? php phpinfo(); ?>
+```
+
+## Install phpmyadmin
+
+```
+sudo apt-get install phpmyadmin
+
+# Fix instlal
+sudo nano /etc/apache2/apache2.conf
+# Add the line to the end of the file
+include /etc/phpmyadmin/apache.conf
+# Restart apache and test http://localhost/phpmyadmin
+
+
 ```
