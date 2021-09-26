@@ -71,4 +71,6 @@ python -c "import flask; print(flask.__version__)"
 ```
 
 
-Original Guide: https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3
+Original Guide:   
+https://www.digitalocean.com/community/tutorials/how-to-make-a-web-application-using-flask-in-python-3  
+https://www.geeksforgeeks.org/connect-flask-to-a-database-with-flask-sqlalchemy/  
